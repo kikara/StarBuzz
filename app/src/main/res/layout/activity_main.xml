@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <ImageView android:layout_width="200dp"
+               android:layout_height="100dp"
+               android:src="@drawable/starbuzz_logo"
+               android:layout_marginTop="16dp"
+               android:layout_marginLeft="16dp"
+                android:contentDescription="@string/starbuzz_logo"
+    />
+
+    <ListView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="16dp"
+              android:layout_marginTop="16dp"
+              android:id="@+id/list_options"
+              android:entries="@array/options"
+    />
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/favorites"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginLeft="20dp"
+    />
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_favorites"
+    />
+
+
+
+
+</LinearLayout>
